@@ -1,15 +1,17 @@
+package tn.esprit.devops_project.services;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
+import tn.esprit.devops_project.ProductServiceImpl;
 import tn.esprit.devops_project.entities.Product;
 import tn.esprit.devops_project.entities.ProductCategory;
 import tn.esprit.devops_project.entities.Stock;
 import tn.esprit.devops_project.repositories.ProductRepository;
 import tn.esprit.devops_project.repositories.StockRepository;
-import tn.esprit.devops_project.services.ProductServiceImpl;
 
 import java.util.Arrays;
 import java.util.List;

@@ -1,4 +1,4 @@
-package tn.esprit.devops_project.services;
+package tn.esprit.devops_project;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -12,7 +12,6 @@ import tn.esprit.devops_project.entities.Supplier;
 import tn.esprit.devops_project.repositories.InvoiceRepository;
 import tn.esprit.devops_project.repositories.OperatorRepository;
 import tn.esprit.devops_project.repositories.SupplierRepository;
-import tn.esprit.devops_project.services.InvoiceServiceImpl;
 
 import java.util.*;
 

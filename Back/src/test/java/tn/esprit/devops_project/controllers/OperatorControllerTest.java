@@ -10,9 +10,8 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
-import tn.esprit.devops_project.controllers.OperatorController;
 import tn.esprit.devops_project.entities.Operator;
-import tn.esprit.devops_project.services.Iservices.IOperatorService;
+import tn.esprit.devops_project.Iservices.IOperatorService;
 
 import java.util.Arrays;
 import java.util.List;

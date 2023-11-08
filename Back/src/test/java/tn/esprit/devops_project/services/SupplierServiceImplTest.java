@@ -1,12 +1,14 @@
+package tn.esprit.devops_project.services;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
+import tn.esprit.devops_project.SupplierServiceImpl;
 import tn.esprit.devops_project.entities.Supplier;
 import tn.esprit.devops_project.repositories.SupplierRepository;
-import tn.esprit.devops_project.services.SupplierServiceImpl;
 
 import static org.mockito.ArgumentMatchers.any;
 

@@ -11,9 +11,8 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
-import tn.esprit.devops_project.controllers.StockController;
 import tn.esprit.devops_project.entities.Stock;
-import tn.esprit.devops_project.services.Iservices.IStockService;
+import tn.esprit.devops_project.Iservices.IStockService;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 
 import java.util.Arrays;

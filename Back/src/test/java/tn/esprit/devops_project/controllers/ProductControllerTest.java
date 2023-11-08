@@ -12,10 +12,9 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
-import tn.esprit.devops_project.controllers.ProductController;
 import tn.esprit.devops_project.entities.Product;
 import tn.esprit.devops_project.entities.ProductCategory;
-import tn.esprit.devops_project.services.Iservices.IProductService;
+import tn.esprit.devops_project.Iservices.IProductService;
 
 import java.util.Arrays;
 import java.util.List;
