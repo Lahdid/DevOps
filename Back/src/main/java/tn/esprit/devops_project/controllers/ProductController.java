@@ -29,6 +29,7 @@ public class ProductController {
     List<Product> retreiveAllProduct(){
         return productService.retreiveAllProduct();
     }
+
     @GetMapping("/product/stock/{id}")
     List<Product> retreiveProductStock(@PathVariable Long id){
         return productService.retreiveProductStock(id);

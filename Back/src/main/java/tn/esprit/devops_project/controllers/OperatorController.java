@@ -7,6 +7,7 @@ import tn.esprit.devops_project.services.Iservices.IOperatorService;
 
 import java.util.List;
 
+
 @RestController
 @AllArgsConstructor
 public class OperatorController {
@@ -28,10 +29,12 @@ public class OperatorController {
 		return operatorService.addOperator(operator);
 	}
 
-	@DeleteMapping("/operatot/{operatorId}")
+	@DeleteMapping("/operator/{operatorId}") // Corrected the path here
 	public void removeOperator(@PathVariable Long operatorId) {
 		operatorService.deleteOperator(operatorId);
 	}
+
+
 
 	@PutMapping("/operator")
 	public Operator modifyOperateur(@RequestBody Operator operator) {
