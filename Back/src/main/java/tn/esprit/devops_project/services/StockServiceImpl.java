@@ -1,4 +1,4 @@
-package tn.esprit.devops_project;
+package tn.esprit.devops_project.services;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package tn.esprit.devops_project;
+package tn.esprit.devops_project.services;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

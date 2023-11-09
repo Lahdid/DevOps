@@ -1,11 +1,14 @@
 package tn.esprit.devops_project.repositories;
 
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.BeforeEach
+
+;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.context.junit4.SpringRunner;
 import tn.esprit.devops_project.entities.Invoice;
 import tn.esprit.devops_project.entities.Supplier;
@@ -15,11 +18,12 @@ import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.verify;
 
-@RunWith(SpringRunner.class)
+@ExtendWith(SpringExtension.class)
+
 @DataJpaTest // This annotation will configure an in-memory database for testing
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 public class SupplierRepositoryTest {
@@ -29,7 +33,9 @@ public class SupplierRepositoryTest {
 
     private Supplier supplier;
 
-    @Before
+    @BeforeEach
+
+
     public void setUp() {
         // Initialize your test data
         Supplier supplier1 = new Supplier(1L, "S123", "Supplier One", SupplierCategory.ORDINAIRE, null);

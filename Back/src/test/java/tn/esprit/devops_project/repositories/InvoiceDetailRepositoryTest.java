@@ -1,11 +1,14 @@
 package tn.esprit.devops_project.repositories;
 
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.BeforeEach
+
+;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.context.junit4.SpringRunner;
 import tn.esprit.devops_project.entities.InvoiceDetail;
 
@@ -15,7 +18,8 @@ import java.util.Optional;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
-@RunWith(SpringRunner.class)
+@ExtendWith(SpringExtension.class)
+
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 public class InvoiceDetailRepositoryTest {
@@ -25,7 +29,9 @@ public class InvoiceDetailRepositoryTest {
 
     private InvoiceDetail invoiceDetail;
 
-    @Before
+    @BeforeEach
+
+
     public void init() {
         // Initialize your InvoiceDetail instance here and save it to the repository if necessary.
         invoiceDetail = new InvoiceDetail();
