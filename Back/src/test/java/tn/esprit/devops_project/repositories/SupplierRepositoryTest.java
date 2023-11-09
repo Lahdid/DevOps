@@ -26,6 +26,8 @@ import static org.mockito.Mockito.verify;
 @ExtendWith(SpringExtension.class)
 
 @DataJpaTest
+@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
+
 public class SupplierRepositoryTest {
 
     @Autowired

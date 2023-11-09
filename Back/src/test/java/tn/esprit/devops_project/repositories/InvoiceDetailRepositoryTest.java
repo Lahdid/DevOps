@@ -23,6 +23,7 @@ import static org.hamcrest.Matchers.*;
 @ExtendWith(SpringExtension.class)
 
 @DataJpaTest
+@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 public class InvoiceDetailRepositoryTest {
 
     @Autowired
