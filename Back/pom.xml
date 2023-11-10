@@ -18,10 +18,10 @@
     </properties>
 
     <distributionManagement>
-        <repository>
+        <repository>    
             <id>deploymentRepo</id>
             <name>Nexus Repository</name>
-            <url>http://172.17.0.2:8081/repository/Mondher_Nexus_Repo/</url>
+            <url>http://192.168.33.10:8081/repository/DevOps/</url>
         </repository>
     </distributionManagement>
 
