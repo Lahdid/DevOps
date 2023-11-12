@@ -1,1 +1,1 @@
-## DevOps CI/CD Project
+## DevOps CI/CD Pipeline
