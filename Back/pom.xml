@@ -113,6 +113,10 @@
         <groupId>org.sonarsource.scanner.maven</groupId>
         <artifactId>sonar-maven-plugin</artifactId>
         <version>3.7.0.1746</version>
+<configuration>
+                <sonar.login>squ_66b4b23123e30c613107dc997564fadd480af342</sonar.login>
+                
+            </configuration>
       </plugin>
             </plugins>
         </pluginManagement>
