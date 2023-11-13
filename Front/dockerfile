@@ -4,12 +4,12 @@ WORKDIR /usr/local/app
 
 COPY package*.json ./
 
-RUN npm install
-
 COPY . .
+
+RUN npm install
 
 RUN npm run build
 
-EXPOSE 4200
+EXPOSE 80
 
 CMD ["ng", "serve"]
