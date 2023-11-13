@@ -18,7 +18,7 @@ services:
 
   # Spring Boot service
   springboot-app:
-    image: lahdid/devops:back:latest
+    image: lahdid/devops:back
     ports:
       - "8082:8082"
     depends_on:
@@ -28,7 +28,7 @@ services:
 
   # Angular service
   angular-app:
-    image: lahdid/devops:front:latest
+    image: lahdid/devops:front
     ports:
       - "80:80"
     depends_on:
