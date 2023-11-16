@@ -7,7 +7,7 @@ services:
     restart: on-failure
     container_name: mysql
     environment:
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: Admin0000*
       MYSQL_DATABASE: devops
     ports:
       - "3306:3306"
@@ -26,7 +26,7 @@ services:
       SPRING_DATASOURCE_DRIVERCLASSNAME: "com.mysql.cj.jdbc.Driver"
       SPRING_DATASOURCE_URL: "jdbc:mysql://mysql:3306/devops?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
       SPRING_DATASOURCE_USERNAME: "root"
-      SPRING_DATASOURCE_PASSWORD: "root"
+      SPRING_DATASOURCE_PASSWORD: "Admin0000*"
       SPRING_JPA_HIBERNATE_DDL-AUTO: "update"
     depends_on:
       - mysql
