@@ -4,7 +4,7 @@ services:
   # MySQL service
   mysql:
     image: mysql:latest
-    restart: always
+    restart: on-failure
     container_name: mysql
     environment:
       MYSQL_ROOT_PASSWORD: root
